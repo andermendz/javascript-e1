@@ -1,16 +1,15 @@
-const removeFromArray = function (a, d) {
+const removeFromArray = function (a, ...n) {
+  // im fucking motivated RN
 
-    
+  n.forEach((d) => {
+    for (i = 0; i < a.length; i++) {
+      if (a[i] === d) {
+        delete a[i];
+      }
+    }
+  });
 
-  for (i = 0; i < a.length; i++) {
-    if (a[i] === d) {
-      delete a[i];
-    } 
-  }
-
-
-
-  return a.filter(Number);
+  return a.filter(String);
 };
 
 // Do not edit below this line
